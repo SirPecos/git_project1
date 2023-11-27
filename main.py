@@ -26,7 +26,7 @@ class Yellow_Ellipses(QMainWindow):
 
     def draw(self, qp):
         r = random.randint(1, 100)
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         qp.drawEllipse(random.randint(0, 740), random.randint(0, 450), r, r)
 
 
